@@ -4,6 +4,15 @@
 		max-width: 100%;
 }
 
+.exchange.type-dark {
+		left: 140px;
+		top: 110px;
+}
+.expired.type-dark {
+		left: 100px;
+		top: 180px;
+}
+		
 @media (min-width: 768px) {
 		.container {
 				max-width: 750px;
@@ -11,6 +20,14 @@
 
 		.user-info {
 				max-width: 750px;
+		}
+		.exchange.type-dark {
+				left: 260px;
+				top: 110px;
+		}
+		.expired.type-dark {
+				left: 200px;
+				top: 180px;
 		}
 }
 
@@ -22,6 +39,14 @@
 		.user-info {
 				max-width: 970px;
 		}
+		.exchange.type-dark {
+				left: 380px;
+				top: 110px;
+		}
+		.expired.type-dark {
+				left: 320px;
+				top: 180px;
+		}
 }
 
 @media (min-width: 1200px) {
@@ -31,6 +56,14 @@
 
 		.user-info {
 				max-width: 1240px;
+		}
+		.exchange.type-dark {
+				left: 100px;
+				top: 110px;
+		}
+		.expired.type-dark {
+				left: 50px;
+				top: 180px;
 		}
 }
 
@@ -480,6 +513,37 @@ a {
 		background-color: transparent;
 }
 
+span .type-dark {
+	color: #fff;
+    background: #222;
+	margin-left: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 13px;
+    left: -999em;
+    padding: 8px 21px;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out;
+    top: -999em;
+    visibility: hidden;
+    z-index: 999;
+}
+
+span:hover .type-dark {
+    visibility: visible;
+	opacity: 0.9;
+}
+
+.form-wrap {
+	position: relative;
+}
+
+
+.place-top {
+    margin-top: -10px;
+}
+
 /* 規則說明 */
 .hp-rule-card {
 		display: flex;
@@ -716,12 +780,13 @@ p {
 
 /* 已用點數 */
 .fade {
-		opacity: 0;
+		/*opacity: 0;*/
+		display: none;
 		-webkit-transition: opacity .15s linear;
 		-o-transition: opacity .15s linear;
 		transition: opacity .15s linear;
 }
-
+/*
 .no-stuff.fade.in {
 		opacity: 1;
 }
@@ -734,15 +799,16 @@ p {
 .fade.in {
 		opacity: 1;
 }
-
+*/
 @media (min-width: 992px) {
 		.no-stuff {
-				margin-top: calc(50% - 180px);
+				margin-top: calc(50% - 200px);
+				margin-bottom: calc(50% - 200px);
 		}
 }
 
 .vertical-horizontal-center {
-		display: flex;
+		/*display: flex;*/
 		-webkit-box-align: center;
 		align-items: center;
 		-webkit-box-pack: center;

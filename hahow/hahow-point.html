@@ -58,36 +58,38 @@
                                                                         <!-- js edit -->
                                                                         <span class="">= NT$ 12</span>&nbsp;
                                                                         <!-- js edit -->
-                                                                        <span><span data-tip="true"
+                                                                        <span class=""><span data-tip="true"
                                                                                         data-for="tooltip-兌換比率為 100 : 1"
                                                                                         aria-hidden="true"
                                                                                         class="fa fa-question-circle"
                                                                                         currentitem="false"></span>
-                                                                                <!-- <div class="react_component_tooltip place-top type-dark"
+                                                                                <!-- 彈跳提示 -->
+                                                                                <div class="exchange type-dark place-top"
                                                                                         id="tooltip-兌換比率為 100 : 1"
                                                                                         data-id="tooltip">
                                                                                         <span>兌換比率為 100 :
                                                                                                 1</span>
-                                                                                </div> -->
+                                                                                </div>
                                                                         </span></span>
                                                         </div>
                                                 </div>
                                                 <div class="pad-tb-15 pad-rl-10 text-center">
                                                         <!-- js edit -->
-                                                        <div>0&nbsp;HP 將於本月底<a class="link"
+                                                        <div calss="form-wrap">0&nbsp;HP 將於本月底<a class="link"
                                                                         href="https://help.hahow.in/關於-hahow-point-學習點數機制/hahow-point-使用時間限制"
-                                                                        target="__blank">過期</a>&nbsp;<span><span
+                                                                        target="__blank">過期</a>&nbsp;<span class=""><span
                                                                                 data-tip="true"
-                                                                                data-for="tooltip-2020/05/01 ~ 2020/05/31 獲得之點數"
+                                                                                data-for="tooltip-獲得之點數"
                                                                                 aria-hidden="true"
                                                                                 class="fa fa-question-circle"
                                                                                 currentitem="false"></span>
-                                                                        <!-- <div class="react_component_tooltip place-top type-dark"
-                                                                                id="tooltip-2020/05/01 ~ 2020/05/31 獲得之點數"
+                                                                        <!-- 彈跳提示 -->
+                                                                        <div class="expired type-dark place-top"
+                                                                                id="tooltip-獲得之點數"
                                                                                 data-id="tooltip">
                                                                                 <span>2020/05/01 ~ 2020/05/31
                                                                                         獲得之點數</span>
-                                                                        </div> -->
+                                                                        </div>
                                                                 </span></div>
                                                         <!-- js edit -->
                                                 </div>
@@ -377,8 +379,8 @@
                                 <div class="hp-history hp-history-table marg-rl-15">
                                         <div class="ta-l">
                                                 <div class="hp-tablist text-center" role="tablist">
-                                                        <span class="tab active-tab" role="tab" tabindex="0">已獲點數</span>
-                                                        <span class="tab" role="tab" tabindex="0">已用點數</span>
+                                                        <span class="tab active-tab" role="tab" tabindex="0" id="get-point">已獲點數</span>
+                                                        <span class="tab" role="tab" tabindex="0" id="used-point">已用點數</span>
                                                 </div>
                                                 <!-- 已獲點數 -->
                                                 <!-- js edit -->
@@ -438,6 +440,18 @@
                                 autoplaySpeed: 2000,
                         });
 
+                });
+                $("#used-point").on('click', function(){
+                        $("#used-point").addClass("active-tab");
+                        $("#get-point").removeClass("active-tab");
+                        $(".dynamic-block").addClass("fade out");
+                        $(".no-stuff").removeClass("fade out");
+                });
+                $("#get-point").on('click', function(){
+                        $("#get-point").addClass("active-tab");
+                        $("#used-point").removeClass("active-tab");
+                        $(".no-stuff").addClass("fade out");
+                        $(".dynamic-block").removeClass("fade out");
                 });
         </script>
 </body>
