@@ -252,6 +252,41 @@
         .proud .car-link {
             background-image:url("img/advantage-5-video-button-bg.png");
         }
+        .Menu-Box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .TheHeader .Menu-Box {
+            background-color: black;
+        }
+
+        .Menu-Box .Menu {
+            width: 1200px;
+            display: flex;
+            justify-content: center;
+            margin: 0 200px;
+        }
+
+        .Menu li {
+            list-style: none;
+            width: 184px;
+            padding: 25px 0;
+            margin: 5px;
+            text-align: center;
+            border-bottom: none;
+        }
+
+        .Menu li:hover {
+            padding: 25px 0 22px;
+            border-bottom: 3px solid orangered;
+        }
+
+        .Menu a {
+            color: lightyellow;
+        }
         /* video {
             -webkit-mask-image: url(img/things.svg);
             position: relative;
@@ -275,13 +310,36 @@
             <h1>五大優勢</h1>
             <span class="line"></span>
         </div>
-
-        <div class="selector">
-            <a href="#control">操控樂趣<span>操控樂趣</span></a>
-            <a href="#security">安全守護<span>安全守護</span></a>
-            <a href="#ride">乘坐舒適<span>乘坐舒適</span></a>
-            <a href="#people">以人為本<span>以人為本</span></a>
-            <a href="#proud">引以為傲<span>引以為傲</span></a>
+        
+        <div class="Menu-Box">
+            <nav class="Menu">
+                <h2 class="DontSee">Menu</h2>
+                <li>
+                    <h3>
+                        <a href="javascrip:void(0)">核心理念</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="javascrip:void(0)">五大優勢</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="javascrip:void(0)">46 THINGS</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="javascrip:void(0)">影片演示</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="javascrip:void(0)">搭載車款</a>
+                    </h3>
+                </li>
+            </nav>
         </div>
 
         <section class="control" id="control">
