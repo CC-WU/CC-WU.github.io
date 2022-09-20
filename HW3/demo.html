@@ -287,6 +287,49 @@
         .Menu a {
             color: lightyellow;
         }
+		.FiveAdvantages-Menu {
+			width: 1140px;
+			display: flex;
+			margin: 30px 0;
+			justify-content: center;
+		}
+				.FiveAdvantages-Menu li {
+			list-style: none;
+			width: 180px;
+			margin: 0 5px;
+			padding: 10px 0;
+			border: 1px dotted black;
+			text-align: center;
+			position: relative;
+		}
+
+		.FiveAdvantages-Menu a::after {
+			content: "";
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: maroon;
+			z-index: -1;
+			transition: .3s;
+		}
+
+		.FiveAdvantages-Menu a:hover {
+			color: rgb(252, 252, 238);
+			transition: .2s;
+		}
+
+		.FiveAdvantages-Menu a:hover::after {
+			height: 100%;
+		}
+
+		.FiveAdvantages-Menu a {
+			color: black;
+			font-size: 18px;
+			display: block;
+		}
+
         /* video {
             -webkit-mask-image: url(img/things.svg);
             position: relative;
@@ -312,32 +355,21 @@
         </div>
         
         <div class="Menu-Box">
-            <nav class="Menu">
-                <h2 class="DontSee">Menu</h2>
+            <nav class="FiveAdvantages-Menu">
                 <li>
-                    <h3>
-                        <a href="javascrip:void(0)">核心理念</a>
-                    </h3>
+                    <h3><a href="javascrip:void(0)">操控樂趣</a> </h3>
                 </li>
                 <li>
-                    <h3>
-                        <a href="javascrip:void(0)">五大優勢</a>
-                    </h3>
+                    <h3><a href="javascrip:void(0)">安全守護</a> </h3>
                 </li>
                 <li>
-                    <h3>
-                        <a href="javascrip:void(0)">46 THINGS</a>
-                    </h3>
+                    <h3><a href="javascrip:void(0)">乘坐舒適</a> </h3>
                 </li>
                 <li>
-                    <h3>
-                        <a href="javascrip:void(0)">影片演示</a>
-                    </h3>
+                    <h3><a href="javascrip:void(0)">以人為本</a> </h3>
                 </li>
                 <li>
-                    <h3>
-                        <a href="javascrip:void(0)">搭載車款</a>
-                    </h3>
+                    <h3><a href="javascrip:void(0)">引以為傲</a> </h3>
                 </li>
             </nav>
         </div>
