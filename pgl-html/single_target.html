@@ -21,6 +21,9 @@
 	<link rel="stylesheet" type="text/css" href="files/assets/css/font-awesome-n.min.css">
 
 	<link rel="stylesheet" href="files/bower_components/chartist/css/chartist.css" type="text/css" media="all">
+	<link rel="stylesheet" href="files/bower_components/select2/css/select2.min.css" />
+	<link rel="stylesheet" type="text/css" href="files/bower_components/bootstrap-multiselect/css/bootstrap-multiselect.css" />
+<link rel="stylesheet" type="text/css" href="files/bower_components/multiselect/css/multi-select.css" />
 
 	<link rel="stylesheet" type="text/css" href="files/assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="files/assets/css/widget.css">
@@ -251,7 +254,7 @@
 											</li>
 										</ul>
 									</li>
-									<li class="active">
+									<li class="">
 										<a class="waves-effect waves-dark" href="smart-search.html"><span class="pcoded-micon"><i class="feather icon-box"></i></span> <span class="pcoded-mtext">Smart Search</span></a>
 									</li>
 									<li class="pcoded-hasmenu">
@@ -306,7 +309,7 @@
 											</li>
 										</ul>
 									</li>
-									<li class="">
+									<li class="active">
 										<a class="waves-effect waves-dark" href="single_target.html"><span class="pcoded-micon"><i class="feather icon-home"></i></span> <span class="pcoded-mtext">單一標的</span></a>
 									</li>
 									<li class="">
@@ -732,7 +735,7 @@
 									<div class="page-header-title">
 										<i class="feather icon-home bg-c-blue"></i>
 										<div class="d-inline">
-											<h5>Smart Search</h5><span></span>
+											<h5>單一標的</h5><span></span>
 										</div>
 									</div>
 								</div>
@@ -743,7 +746,7 @@
 												<a href="index.html"><i class="feather icon-home"></i></a>
 											</li>
 											<li class="breadcrumb-item">
-												<a href="#!">Smart Search</a>
+												<a href="#!">單一標的</a>
 											</li>
 										</ul>
 									</div>
@@ -783,11 +786,19 @@
 </div>
 
 <div class="col-sm-10">
-<label class="col-sm-2 col-form-label">條件</label>
+<label class="col-sm-2 col-form-label">標的交易策略</label>
 <div class="col-sm-10">
-<input type="text" class="form-control" value="條件1,條件2,條件3" data-role="tagsinput">
+<select class="js-example-basic-multiple col-sm-12" multiple="multiple">
+<option value="AL">標的交易策略執行績效差異與分析</option>
+<option value="WY">標的交易策略參數妥適性追蹤</option>
+<option value="WY">標的交易策略上線妥適性分析</option>
+</select>
 </div>
 </div>
+
+
+
+
 
 <div class="col-sm-10" style="margin-top: 20px;margin-left: 20px;">
 <button class="btn btn-primary btn-round waves-effect waves-light">Search</button>
@@ -921,6 +932,14 @@
 	<script src="files/assets/pages/widget/amchart/amcharts.js"></script>
 	<script src="files/assets/pages/widget/amchart/serial.js"></script>
 	<script src="files/assets/pages/widget/amchart/light.js"></script>
+	<script type="text/javascript" src="files/bower_components/select2/js/select2.full.min.js"></script>
+
+	<script type="text/javascript" src="files/bower_components/bootstrap-multiselect/js/bootstrap-multiselect.js">
+</script>
+<script type="text/javascript" src="files/bower_components/multiselect/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="files/assets/js/jquery.quicksearch.js"></script>
+
+<script type="text/javascript" src="files/assets/pages/advance-elements/select2-custom.js"></script>
 
 	<script src="files/assets/js/pcoded.min.js"></script>
 	<script src="files/assets/js/vertical/vertical-layout.min.js"></script>
